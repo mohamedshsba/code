@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظام إدارة الرموز</title>
+</head>
+<body>
+    <h1>نظام إدارة الرموز</h1>
+    <div>
+        <button id="hostButton">استضافة</button>
+        <button id="verifyButton">التحقق من الرمز</button>
+    </div>
+
+    <div id="hostSection" style="display:none;">
+        <input type="password" id="hostPassword" placeholder="أدخل كلمة المرور">
+        <button onclick="hostLogin()">تسجيل الدخول</button>
+        <div id="codesList"></div>
+        <button id="addCodeButton" onclick="addCode()">إضافة رمز جديد</button>
+    </div>
+
+    <div id="verifySection" style="display:none;">
+        <input type="text" id="userCode" placeholder="أدخل الرمز">
+        <button onclick="verifyCode()">تحقق</button>
+        <p id="verifyMessage"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
